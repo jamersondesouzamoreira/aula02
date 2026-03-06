@@ -3,10 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ficha de Cadastro de Funcionário</title>
+    <style>
+        body { font-family: Arial, sans-serif; font-size: 12px; margin: 20px; color: #000; }
+        .container { border: 2px solid #000; max-width: 800px; margin: auto; padding: 0; }
+        
+        /* Cabeçalho */
+        .header { display: flex; border-bottom: 2px solid #000; height: 80px; }
+        .header-logo { width: 30%; border-right: 2px solid #000; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+        .header-dados { width: 70%; padding: 10px; text-align: center; font-weight: bold; }
+        
+        /* Título Principal */
+        .title-bar { background-color: #f0f0f0; text-align: center; padding: 8px; font-size: 16px; font-weight: bold; border-bottom: 2px solid #000; text-transform: uppercase; }
+        
+        /* Seções e Inputs */
+        .section { border-bottom: 1px solid #000; padding: 10px 5px; }
+        .row { display: flex; margin-bottom: 8px; gap: 10px; }
+        .field { display: flex; flex-direction: column; flex-grow: 1; }
+        
+        label { font-weight: bold; font-size: 10px; margin-bottom: 2px; text-transform: uppercase; }
+        input { border: 1px solid #000; padding: 5px; height: 18px; outline: none; }
+        
+        .obs-area { height: 100px; border: 1px solid #000; width: 100%; margin-top: 5px; }
+
+        /* Ajustes de largura específicos */
+        .w-10 { width: 10%; } .w-20 { width: 20%; } .w-30 { width: 30%; } 
+        .w-40 { width: 40%; } .w-50 { width: 50%; } .w-60 { width: 60%; }
+        .w-70 { width: 70%; } .w-100 { width: 100%; }
+
+        @media print {
+            body { margin: 0; }
+            .container { border-width: 1px; }
+        }
+    </style>
 </head>
 <body>
-    <h1>Jamerson de souza</h1>
-    
+
+<div class="container">
+    <div class="header">
+        <div class="header-logo">LOGO</div>
+        <div class="header-dados">DADOS DA EMPRESA</div>
+    </div>
+
+    <div class="title-bar">Ficha de Cadastro de Funcionário</div>
+
+    <div class="section">
+        <div class="row">
+            <div class="field w-100">
+                <label>Nome do Funcionário:</label>
+                <input type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="field w-30"><label>CPF:</label><input type="text"></div>
+            <div class="field w-30"><label>RG:</label><input type="text"></div>
+            <div class="field w-30"><label>Título de Eleitor:</label><input type="text"></div>
+        </div>
+        <div class="row">
+            <div class="field w-30"><label>Carteira de Trabalho:</label><input type="text"></div>
+            <div class="field w-30"><label>PIS:</label><input type="text"></div>
+            <div class="field w-30"><label>Reservista:</label><input type="text"></div>
+        </div>
+        <div class="row">
+            <div class="field w-20"><label>Data de Nascimento:</label><input type="text"></div>
+            <div class="field w-50"><label>Cidade:</label><input type="text"></div>
+            <div class="field w-20"><label>Estado:</label><input type="text"></div>
+        </div>
+        <div class="row"><div class="field w-100"><label>Pai:</label><input type="text"></div></div>
+        <div class="row"><div class="field w-100"><label>Mãe:</label><input type="text"></div></div>
+    </div>
+
+    <div class="section">
+        <div class="row"><div class="field w-100"><label>Endereço:</label><input type="text"></div></div>
+        <div class="row">
+            <div class="field w-60"><label>Bairro:</label><input type="text"></div>
+            <div class="field w-30"><label>CEP:</label><input type="text"></div>
+        </div>
+        <div class="row">
+            <div class="field w-60"><label>Cidade:</label><input type="text"></div>
+            <div class="field w-30"><label>Estado:</label><input type="text"></div>
+        </div>
+        <div class="row">
+            <div class="field w-20"><label>Telefone:</label><input type="text"></div>
+            <div class="field w-30"><label>Celular:</label><input type="text"></div>
+            <div class="field w-40"><label>E-mail:</label><input type="text"></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="row">
+            <div class="field w-30"><label>Estado Civil:</label><input type="text"></div>
+            <div class="field w-60"><label>Nome do Cônjuge:</label><input type="text"></div>
+        </div>
+        <div class="row">
+            <div class="field w-70"><label>Dependente 1:</label><input type="text"></div>
+            <div class="field w-20"><label>Data de Nascimento:</label><input type="text"></div>
+        </div>
+        <div class="row">
+            <div class="field w-70"><label>Dependente 2:</label><input type="text"></div>
+            <div class="field w-20"><label>Data de Nascimento:</label><input type="text"></div>
+        </div>
+        <div class="row">
+            <div class="field w-70"><label>Dependente 3:</label><input type="text"></div>
+            <div class="field w-20"><label>Data de Nascimento:</label><input type="text"></div>
+        </div>
+    </div>
+
+    <div class="section" style="border-bottom: none;">
+        <div class="row">
+            <div class="field w-60"><label>Escolaridade:</label><input type="text"></div>
+        </div>
+        <div class="row">
+            <div class="field w-20"><label>Data de Admissão:</label><input type="text"></div>
+            <div class="field w-40"><label>Função:</label><input type="text"></div>
+            <div class="field w-30"><label>Carga Horária:</label><input type="text"></div>
+        </div>
+        <div class="row">
+            <div class="field w-100">
+                <label>Observações:</label>
+                <div class="obs-area"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
